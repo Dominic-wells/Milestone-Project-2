@@ -1,0 +1,56 @@
+body {
+    background: #1D1D1D;
+    background-color: #1D1D1D;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #181818;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #A7A7A7;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #73FABA;
+}
+
+.main {
+    margin-left: 150px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+navbar-brand. {
+
+    margin-bottom: 1000px;
+
+}
+
+logo. {
+    align-self: center;
+    margin-right: 2000px;
+}
