@@ -1,8 +1,19 @@
 body {
+    font-size: 18px;
+    color: white;
+    padding: 0%;
     background: #1D1D1D;
-    background-color: #1D1D1D;
 }
 
+h1 {
+    font-family: 'Arimo', sans-serif;
+    /* font-family: 'Nothing You Could Do', cursive; */
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    /* font-family: 'Nothing You Could Do', cursive; */
+}
 
 .sidenav {
     height: 100%;
@@ -12,25 +23,90 @@ body {
     top: 0;
     left: 0;
     background-color: #181818;
+    /* justify-content: space-between; */
     overflow-x: hidden;
-    padding-top: 20px;
+    align-items: center;
+    /* padding-top: 20px; */
+
 }
 
-.sidenav a {
-    padding: 6px 6px 6px 32px;
+
+.logo-image {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo-text-box {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.logo-text {
+    font-family: 'Nothing You Could Do', sans-serif, cursive;
+    color: #A7A7A7;
+}
+
+
+.nav-link {
+    text-align: center;
+    padding: 6px 6px 6px;
     text-decoration: none;
     font-size: 25px;
     color: #A7A7A7;
     display: block;
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+    box-shadow: inset 0 0 0 0 #A7A7A7;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+
 }
 
-.sidenav a:hover {
+.nav-link:hover {
+    box-shadow: inset 150px 0 0 0 #73FABA;
+    color: #181818;
+
+}
+
+
+.media-links {
+    margin-top: 130px;
+    display: grid;
+    column-gap: 5px;
+    /* justify-content: center; */
+    grid-template-columns: auto auto auto;
+}
+
+
+.media-links a {
+
+    /* display: inline-block; */
+    /* width: 60px; */
+    font-size: 30px;
+    color: #A7A7A7;
+    padding-left: 10px;
+    display: inline-block;
+
+
+}
+
+.media-links a:hover {
+    /* box-shadow: inset 150px 0 0 0 #73FABA; */
     color: #73FABA;
+
 }
 
-.main {
-    margin-left: 150px;
-    padding: 0px 10px;
+.media-link {
+    /* color: #A7A7A7; */
+    /* list-style: none; */
+    /* text-align: center; */
+    /* float: left; */
+    float: left;
+    padding-left: 10px;
+
+
 }
 
 @media screen and (max-height: 450px) {
@@ -43,14 +119,14 @@ body {
     }
 }
 
+.main {
+    margin-left: 150px;
+    padding: 0px 10px;
+    background: #1D1D1D;
+}
 
 navbar-brand. {
 
     margin-bottom: 1000px;
 
-}
-
-logo. {
-    align-self: center;
-    margin-right: 2000px;
 }
