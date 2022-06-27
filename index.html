@@ -49,7 +49,29 @@
     </div>
   </div>
 
+  <!--code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
+  <div class="topnav" id="mytopnav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav class="top-nav-links">
+      <a class="top-nav-link" href="#">Analyse</a>
+      <a class="top-nav-link" href="#">Best-Pratice</a>
+      <a class="top-nav-link" href="#">Protect</a>
+    </nav>
+    <div class="top-media-links">
+      <a href="https://www.youtube.com/" target="_blank" aria-label="link to Youtube"><i
+          class="fa-brands fa-youtube-square" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/" target="_blank" aria-label="link to Github"><i
+          class="fa-brands fa-github-square" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" aria-label="link to linkedin"><i class="fa-brands fa-linkedin"
+          aria-hidden="true"></i></a>
+    </div>
+  </div>
+
   <div class="main">
+    <div class="hamburger">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
     <h1>fskfsfskljskdf</h1>
     <p>
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -61,6 +83,18 @@
       mollit anim id est laborum."
     </p>
   </div>
+
+  <!--code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
+  <script>
+    function openNav() {
+      document.getElementById("mytopnav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mytopnav").style.width = "0%";
+    }
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
