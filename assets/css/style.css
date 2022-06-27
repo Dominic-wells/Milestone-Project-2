@@ -7,12 +7,10 @@ body {
 
 h1 {
     font-family: 'Arimo', sans-serif;
-    /* font-family: 'Nothing You Could Do', cursive; */
 }
 
 p {
     font-family: 'Arimo', sans-serif;
-    /* font-family: 'Nothing You Could Do', cursive; */
 }
 
 .sidenav {
@@ -23,10 +21,8 @@ p {
     top: 0;
     left: 0;
     background-color: #181818;
-    /* justify-content: space-between; */
     overflow-x: hidden;
     align-items: center;
-    /* padding-top: 20px; */
 
 }
 
@@ -61,7 +57,6 @@ p {
     border-bottom: 1px solid #282828;
     box-shadow: inset 0 0 0 0 #A7A7A7;
     transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
-
 }
 
 .nav-link:hover {
@@ -75,15 +70,11 @@ p {
     margin-top: 130px;
     display: grid;
     column-gap: 5px;
-    /* justify-content: center; */
     grid-template-columns: auto auto auto;
 }
 
 
 .media-links a {
-
-    /* display: inline-block; */
-    /* width: 60px; */
     font-size: 30px;
     color: #A7A7A7;
     padding-left: 10px;
@@ -93,23 +84,18 @@ p {
 }
 
 .media-links a:hover {
-    /* box-shadow: inset 150px 0 0 0 #73FABA; */
     color: #73FABA;
 
 }
 
 .media-link {
-    /* color: #A7A7A7; */
-    /* list-style: none; */
-    /* text-align: center; */
-    /* float: left; */
     float: left;
     padding-left: 10px;
 
 
 }
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -117,16 +103,96 @@ p {
     .sidenav a {
         font-size: 18px;
     }
+} */
+
+@media screen and (max-width:767px) {
+
+    .sidenav {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0% !important;
+    }
 }
+
+.topnav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.topnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav-links a {
+    color: #A7A7A7;
+    display: inline-block;
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.top-media-links {
+    margin-top: 100px;
+}
+
+.top-media-links a {
+    color: #A7A7A7;
+    padding: 10px 10px 10px;
+
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+@media screen and (min-width:767px) {
+
+    .topnav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+/* .top-nav-link {
+    color: #A7A7A7;
+    display: inline-block;
+    text-decoration: none;
+
+} */
 
 .main {
     margin-left: 150px;
+    margin-top: 100px;
     padding: 0px 10px;
     background: #1D1D1D;
 }
 
-navbar-brand. {
+/* navbar-brand. { */
 
-    margin-bottom: 1000px;
+/* margin-bottom: 1000px; */
 
 }
