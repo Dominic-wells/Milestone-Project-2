@@ -36,7 +36,7 @@
     </div>
     <nav class="nav-links">
       <a class="nav-link" href="#">Analyse</a>
-      <a class="nav-link" href="#">Best-Pratice</a>
+      <a class="nav-link" href="#">Best Practice</a>
       <a class="nav-link" href="#">Protect</a>
     </nav>
     <div class="media-links">
@@ -50,11 +50,11 @@
   </div>
 
   <!--code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
-  <div class="topnav" id="mytopnav">
+  <div class="topnav" id="thetopnav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="top-nav-links">
       <a class="top-nav-link" href="#">Analyse</a>
-      <a class="top-nav-link" href="#">Best-Pratice</a>
+      <a class="top-nav-link" href="#">Best Practice</a>
       <a class="top-nav-link" href="#">Protect</a>
     </nav>
     <div class="top-media-links">
@@ -72,7 +72,6 @@
     <div class="hamburger">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
-
     <h1>fskfsfskljskdf</h1>
     <p>
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -88,17 +87,13 @@
   <!--code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
   <script>
     function openNav() {
-      document.getElementById("mytopnav").style.width = "100%";
+      document.getElementById("thetopnav").style.display = "block";
     }
 
     function closeNav() {
-      document.getElementById("mytopnav").style.width = "0%";
+      document.getElementById("thetopnav").style.display = "none";
     }
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
