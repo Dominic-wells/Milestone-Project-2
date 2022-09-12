@@ -1,7 +1,8 @@
-"use strict";
+document.querySelector("#genratorPass").addEventListener("click", () => {
+  const user_input = document.querySelector("#passlen");
+  request(user_input);
+});
 
-const len = document.getElementById("passlen");
-const api = "https://password-generator1.p.rapidapi.com/api/generePassWd?len=";
 const options = {
   method: "GET",
   headers: {
@@ -10,9 +11,21 @@ const options = {
   },
 };
 
-function generate() {
-  const generate = fetch(api, len, options)
+request = (user_input) => {
+  let url = `https://password-generator1.p.rapidapi.com/api/generePassWd?len=${user_input.value}`;
+  fetch(url, options)
     .then((response) => response.json())
-    .then((response) => console.log(response))
-    .catch((err) => console.error(err));
-}
+    .then((data) => console.log(data));
+  // .then((response) => {
+  //   //handle response
+  //   console.log(response);
+  // })
+  // .then((data) => {
+  //   //handle data
+  //   console.log(data);
+  // })
+  // .catch((error) => {
+  //   console.log("Error");
+  //   //handle error
+  // });
+};
