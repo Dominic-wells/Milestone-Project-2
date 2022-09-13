@@ -3,6 +3,7 @@ document.querySelector("#genratorPass").addEventListener("click", () => {
   request(user_input);
 });
 
+const passworldEl = document.getElementById("dispPassword");
 const options = {
   method: "GET",
   headers: {
@@ -15,17 +16,5 @@ request = (user_input) => {
   let url = `https://password-generator1.p.rapidapi.com/api/generePassWd?len=${user_input.value}`;
   fetch(url, options)
     .then((response) => response.json())
-    .then((data) => console.log(data));
-  // .then((response) => {
-  //   //handle response
-  //   console.log(response);
-  // })
-  // .then((data) => {
-  //   //handle data
-  //   console.log(data);
-  // })
-  // .catch((error) => {
-  //   console.log("Error");
-  //   //handle error
-  // });
+    .then((responseJson) => console.log(responseJson));
 };
