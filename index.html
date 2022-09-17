@@ -117,9 +117,15 @@
       </form>
     </div>
     <div class="passwordbox">
-      <input id="passlen" class="pass-len-box" minlength="3" maxlength="20" placeholder="Enter password length"
-        required>
+      <!-- text input gudice from https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/-->
+      <input type="text" inputmode="numeric" pattern="[0-9]*" id="passlen" class="pass-len-box"
+        placeholder="Enter password length" required>
       <button class="generatorPass" id="genratorPass">Generate</button>
+      <br>
+      <!-- <button onclick="copypass()">Copy text</button> -->
+      <button id="btn-copy">Copy Password</button>
+
+
       <br>
 
       <p id="dispPassword"></p>
