@@ -89,25 +89,36 @@
         <input type="radio" id="yes_number" name="number" value="on" checked="checked">
         <label for="yes_number">Yes</label>
         <input type="radio" id="no_number" name="number" value="off">
-        <label for="no_number">No</label><br>
+        <label for="no_number">No</label>
       </form>
+      <br>
       <form>
-        <p>Include Uppercase</p>
+        <p>Include Uppercase:</p>
         <input type="radio" id="yes_upper" name="upper" value="on" checked="checked">
-        <label for="yes_number">Yes</label>
+        <label for="yes_Upper">Yes</label>
         <input type="radio" id="no_upper" name="upper" value="off">
-        <label for="no_number">No</label><br>
+        <label for="no_Upper">No</label>
       </form>
+      <br>
       <form>
-        <p>Include special characters</p>
+        <p>Include Lowercase:</p>
+        <input type="radio" id="yes_lower" name="lower" value="on" checked="checked">
+        <label for="yes_Lower">Yes</label>
+        <input type="radio" id="no_lower" name="lower" value="off">
+        <label for="no_Lower">No</label>
+      </form>
+      <br>
+      <form>
+        <p>Include special characters:</p>
         <input type="radio" id="yes_spec" name="spec" value="on" checked="checked">
-        <label for="yes_number">Yes</label>
+        <label for="yes_Spec">Yes</label>
         <input type="radio" id="no_spec" name="spec" value="off">
-        <label for="no_number">No</label><br>
+        <label for="no_Spec">No</label><br>
       </form>
     </div>
     <div class="passwordbox">
-      <input id="passlen" class="pass-len-box" placeholder="Enter password length">
+      <input id="passlen" class="pass-len-box" minlength="3" maxlength="20" placeholder="Enter password length"
+        required>
       <button class="generatorPass" id="genratorPass">Generate</button>
       <br>
 
