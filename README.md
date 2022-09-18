@@ -14,15 +14,17 @@ A interactive front-end site that responds to the users' actions, allowing users
 2. [User Experience](#user-experience)
    - [User stories](#user-stories)
 3. [Design](#design)
+   - [Site theme](#Site-theme)
    - [Colour Scheme](#colour-scheme)
    - [Typography](#typography)
    - [Skeleton](#skeleton)
-   - [Site theme](#Site-theme)
    - [Features](#Features)
 
 # Introduction
 
 This website has been developed to inform visitors of their password strength, password best practices and even generate a secure password on request.
+
+This is my Second milestone project with the Code Institute on the Full Stack Web Devlopment Program the main aim is to produce a responsive website with an interactive front-end using JavaScript.
 
 # User Experience
 
@@ -58,10 +60,38 @@ This website has been developed to inform visitors of their password strength, p
 
 # Design
 
+## Site theme
+
+I wanted to avoid using visual effects that would be too distacting to users keeping the theme of minimalist aesthetics.
+
+## Structure
+
+The site site will be a "One Pager" will all the information the users will need on one page
+
 ## Colour Scheme
 
-I wanted to use army/survival coloring based on traditional colours.
+I wanted to use blacks and grays giving a nice contrast for readers.
 
-<details><summary>Army color palette inspiration </summary><img src="assets/readme-assets/army-camo-palette.webp"></details>  
-The core colours I used were Green(#4a572c) Beige(#fcf1c8) Navy(#1e3030), black(#FFFFFF) and white(#000000).  
-<details><summary>main colours ratio</summary><img src="assets/readme-assets/green-beige-contrast.webp"></details>
+<img src="assets/readme-assets/coloursused.png">
+
+## Typography
+
+Arimo was used with a default backup as sans-serif.
+I used 'Nothing You Could Do' with cursive to give the text under the logo a hand written look.
+
+## Skeleton
+
+I produced digital wireframes using Balsamiq.
+
+When producing my wireframes, I decided to develop my ideas in stages, I attempted to improve my designs naturally by reviewing the wireframes after completion and finding areas of improvement.
+
+I developed wireframes for different platforms, desktop, tablet and mobile where used.
+
+Balsamiq wireframe Designs:
+
+# Wireframes
+
+![Desktop Wireframe](assets\readme-assets\wireframe\OPPass Desktop.png)
+![Mobile Wireframe](https://github.com/Dominic-wells/Milestone-Project-2/blob/main/assets/readme-assets/wireframe/Op%20Pass%20Mobile%20stage3.png)
+
+<img>assets/readme-assets/mockup.png
