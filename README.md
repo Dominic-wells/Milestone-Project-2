@@ -130,7 +130,7 @@ The above user entered a password that was found to be good.
 
 ## Password Generator
 
-Visitors can generate a password baised on button and text inputs.
+Visitors can generate a password based on button and text inputs.
 
 Visitors can select what characters and length they wish their password to be.
 The user inputs will be passed to an external API to [passwordwolf](https://passwordwolf.com/) The password is then displayed for the user. The user can also click a button to have the password copied
@@ -142,3 +142,10 @@ This is done by capturing user inputs from radio buttons and the text box, makin
 The above user quested a password that was 6 characters long and used upper,lower and special characters
 
 ## Testing
+
+Code was manually tested by myself as I developed. I also used online tools such as JSHint, chromes Lighthouse, wave.webaim.org and W3C Markup Validator to determine if I missed anything.
+
+![image of lighthouse desktop](assets/readme-assets/lighthouse/oppassdesktop.png)
+![image of lighthouse mobile](assets/readme-assets/lighthouse/oppassmobile.png)
+![image of accessibility fromwave.webaim](assets/readme-assets/validation/Accesstest.png)
+![image of CSS Validator](assets/readme-assets/validation/cssValidator.pngg)
