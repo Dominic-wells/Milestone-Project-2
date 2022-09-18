@@ -96,7 +96,12 @@ Balsamiq wireframe Designs:
 ![Tablet Wireframe](/assets/readme-assets/wireframe/OP%20Pass%20Tablet%20stage2.3.png)
 
 <details><summary>A rough wireframe design in Balsamiq desktop style stage 1</summary><img src="/assets/readme-assets/wireframe/OP Pass Desktop.png"></details>
-<details><summary>A rough wireframe design in Balsamiq desktop style stage 2</summary><img src="/assets/readme-assets/wireframe/OP Pass Desktop stage.3.png"></details>
+<details><summary>A rough wireframe design in Balsamiq desktop style stage 2</summary><img src="/assets/readme-assets/wireframe/OP Pass Desktop stage3.png"></details>
+<br>
+<details><summary>A rough wireframe design in Balsamiq mobile style stage 1</summary><img src="/assets/readme-assets/wireframe/OP Pass Mobile.png"></details>
+<details><summary>A rough wireframe design in Balsamiq desktop style stage 2</summary><img src="/assets/readme-assets/wireframe/OP Pass Mobile stage2.png"></details>
+<br>
+<details><summary>A rough wireframe design in Balsamiq tablet style stage 1</summary><img src="/assets/readme-assets/wireframe/OP Pass Tablet.png"></details>
 
 ## Features
 
