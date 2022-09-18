@@ -68,7 +68,7 @@
   </div>
 
   <!--code guidance for hamburger from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
-  <div id="passworddivbox" class="main">
+  <div id="norrisfull" class="main">
     <div class="hamburger">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
@@ -84,7 +84,7 @@
       for their actions. What if the individual gives your password to someone else? What if some of your files are
       deleted or otherwise rendered unusable? Are you willing to take the blame if an unauthorized individual uses your
       access to damage or to make unauthorized changes to data or systems?</p>
-    </p>
+
     <P>Your password should not be the same as your username. Your password should be unique. Do not use the same
       password across multiple accounts.A good password is relatively easy to remember, but hard for somebody else to
       guess. There are a
@@ -114,25 +114,22 @@
     <h2>Tools</h2>
     <P>Use the input box to try out some kicking passwords</P>
 
-
     <!--Password analyze area  -->
     <div id="passworddivbox" class="passwordbox">
       <input type="password" placeholder="Type your password" id="PassDifficulty">
       <br>
       <!-- <span id="strengthDisp" class="badge">Weak</span> -->
-      <h1 id="strengthDisp"><span class="badge badge-secondary"></span></h1>
+      <h1 id="strengthDisp" class="badge badge-secondary">Output here</h1>
       <br>
     </div>
-    </section>
     <div class="container">
       <img src=" assets/images/laptop.webp" width="640" height="400" class="img-fluid center-block laptoplady"
         alt=" illustration image of a women with a laptop">
     </div>
 
-
     <!--text from https://passwordwolf.com/-->
     <section id="best_Practice">
-      <h1>Best Practice</h1>
+      <h2>Best Practice</h2>
       <br>
       <h2>Protect your password
       </h2>
@@ -143,6 +140,19 @@
           encrypted. It is rather simple to steal your password when stored in this way.</li>
         <li>Use a random password generator to create a unique secure pass phrase for each site you login to.
         </li>
+        <li>Don't let anyone use your computer that you don't trust. Don't login to an important online account using
+          someone elses computer. There are ways to steal your password using keystroke loggers or by dumping the
+          memory.</li>
+        <li>Use a different password for every website you have an account with. This way if someone steals your
+          password they only will get to access one thing. At the least, have a separate password for accounts you don't
+          care about and a stronger and unique one for online banking or other private accounts.</li>
+        <li>Passwords should contain at least 1 lowercase letter.</li>
+        <li>Use caution when choosing a way to do password recovery. If you have a dog that all of your friends know
+          about perhaps using your dog's name as your password recovery question is a bad idea. If someone you know
+          wants to hack your account, they can say they've lost the password and when the secret question comes up they
+          will immediately know the answer and access your account.</li>
+        <li>Only use secure methods of login such as HTTPS. Never use your secret key on a page that is just using HTTP.
+        </li>
       </ul>
       <h2>Ways a password is hacked
       </h2>
@@ -150,6 +160,8 @@
         <li>Passwords can be stolen. Either over the network through an insecure channel such as HTTP or from grabbing
           your saved passwords file or simply by looking over your shoulder as you type. They can also be stolen if
           hackers steal the password file of a company you have an account with.</li>
+        <li>Passwords can be guessed. Don't use your name, address, birthday or favorite video game. These will be
+          easily guessable by others. Use a good generator instead.</li>
         <li>Dictionary attack. This is an attack where a computer will try every word in the dictionary to see if it's
           your password. This type of attack often substitutes "O" for "0" or "i" with "1". It also can put one or two
           digits at the end of every word quite quickly too. Protect against this by never using words in a dictionary
@@ -170,11 +182,6 @@
         The generator uses javascript which must be enabled in the browser for the tool to work. The generator creates
         the password on the client side so that none of the passwords are sent over the Internet to be sniffed.</P>
     </section>
-
-
-
-    <!-- <section id="Analyse"></section> -->
-
 
     <div class="radioBtn">
       <form>
@@ -217,8 +224,6 @@
       <button id="btn-copy">Copy Password</button>
       <br>
     </div>
-
-
   </div>
 
   <!-- code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp -->
