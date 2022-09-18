@@ -214,3 +214,32 @@ While manual testing I made sure that the:
 - One API would give a CORS error so I had to add a proxy server to the URL before sending allowing visitors without a browser addon such as Moesif CORS to allow them to get a response
 
 - The API will only accept a length of up to 128, If the visitor enters more than this they will not get a response I have also logged an error with advice on how to prevent this
+
+## Technology used
+
+- HTML - was used to build the structure of the site
+- CSS - to style content
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- Javascript - was used for the interactive features on the website
+
+  ### Project management
+
+- [Visual Studio Code](https://code.visualstudio.com/) - IDE used to code the site and its features
+- [Font Awesome](https://fontawesome.com/) - Used for icons on navbars
+- [Google Fonts](https://fonts.google.com/) - Used to load Fonts onto site
+
+  ### Online resources
+
+- [Stack Overflow](https://stackoverflow.com/) - was used to answer and look up questions I might have had
+- [techsini](http://techsini.com/multi-mockup/index.php) - was used to make my mockup to display the site on different screens
+
+# Credits
+
+## Code
+
+- [w3schools](https://www.w3schools.com)- Guidance across all site
+- Others mentioned in code comments
+
+### Acknowledgements
+
+- My Mentor Ronan For pointing me in the right dierection and providing great feedback.
