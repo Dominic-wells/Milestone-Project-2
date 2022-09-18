@@ -48,11 +48,13 @@ This is my Second milestone project with the Code Institute on the Full Stack We
 
 - #### Returning Visitor Goals
 
-1. As a returning visitor I want, to be able to connect the website delivery, so that I can ask any questions I may have.
+1. As a returning visitor I want, to be able to connect the website developer, so that I can ask any questions I may have.
 
-2. As a returning visitor I want, to able to view other tools the developer might have made. so that I can explore other tools
+2. As a returning visitor I want, to able to view other tools the developer might have made. so that I can explore other tools and programs
 
 3. As a returning visitor, I want to be able to able to generate my own secure password, so I don't have to think of one myself
+
+4. As a returning visitor, I want to be able to navigate to the area of the website I require, with speed.
 
 [Back to top](#OP-Pass)
 
@@ -148,4 +150,67 @@ Code was manually tested by myself as I developed. I also used online tools such
 ![image of lighthouse desktop](assets/readme-assets/lighthouse/oppassdesktop.png)
 ![image of lighthouse mobile](assets/readme-assets/lighthouse/oppassmobile.png)
 ![image of accessibility fromwave.webaim](assets/readme-assets/validation/Accesstest.png)
-![image of CSS Validator](assets/readme-assets/validation/cssValidator.pngg)
+![image of CSS Validator](assets/readme-assets/validation/cssValidator.png)
+
+## Manual testing
+
+I used google chrome developer mode to test the website on different devices I also tested the website on my phone (google pixel 6).
+
+While manual testing I made sure that the:
+
+- The site was visible correctly on all devices
+- Buttons were operational
+- Text input box's allowed all users to input correctly
+- Web links opened up new windows
+
+## User Stories Testing
+
+1. As a first-time visitor, I want a tool to evaluate the strength of my password, so I know it's safe to use.
+
+- This was met by providing a password strength tester.
+
+2. As a first-time visitor, I want the site to be easy to navigate, easy to understand and visually pleasing, so that I can find the information I need and have a pleasant experience whilst doing so.
+
+- This was met by providing a minimalist approach to the site and correct use of headers (h1,h2) etc
+
+3. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about password security, so I can make better security related decisions in the future.
+
+- This was met by providing text and best practice rules throughout the site
+
+4. As a First Time Visitor, I Would like to build a strong password.
+
+- I met this by providing a password generator
+
+- #### Returning Visitor Goals
+
+1. As a returning visitor I want, to be able to connect the website developer, so that I can ask any questions I may have.
+
+- I met this by adding a link to my github
+
+2. As a returning visitor I want, to able to view other tools the developer might have made. so that I can explore other tools and programs
+
+- I met this by adding a link to my github
+
+3. As a returning visitor, I want to be able to able to generate my own secure password, so I don't have to think of one myself
+
+- I added copy button to the password generator to allow visitors to quickly copy passwords across devices
+
+4. As a returning visitor, I want to be able to navigate to the area of the website I require, with speed.
+
+- I met this by adding nav-links to sections of the website
+
+## Bugs and Fixes
+
+### Password Strenth tester
+
+- I didn't want to limit the number of characters a visitor could input in case they used a long password so passwords with exceedingly long passwords might give back a false positive
+
+### Password generator
+
+- I originally had a checkbox for the user inputs I was unable to proceed with the checkbox as I needed to send "1 or 2" values to the API (the checkbox can't give a value if it's not clicked) and couldn't use one box for each form. I moved to radio buttons for their ability for a solid "yes/No" function.
+
+- One API would often Ip ban me for 4 hours after sending too many requests in a short amount of time while I was debugging.
+
+- One API would give a CORS error so I had to add a proxy server to the URL before sending allowing visitors without a browser addon such as Moesif CORS to allow them to get a response
+
+- The API will only accept a length of up to 128, If the visitor enters more than this they will not get a response I have also logged an error with advice on how to prevent this
