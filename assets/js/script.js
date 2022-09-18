@@ -1,50 +1,3 @@
-document.querySelector("#genratorPass").addEventListener("click", () => {
-  const user_input_text = document.querySelector("#passlen");
-  const user_input_number = document.querySelector(
-    "input[name=number]:checked"
-  )?.value;
-  const user_input_upper = document.querySelector(
-    "input[name=upper]:checked"
-  )?.value;
-  const user_input_special = document.querySelector(
-    "input[name=spec]:checked"
-  )?.value;
-  const user_input_lower = document.querySelector(
-    "input[name=lower]:checked"
-  )?.value;
-  request(
-    user_input_text,
-    user_input_number,
-    user_input_upper,
-    user_input_special,
-    user_input_lower
-  );
-});
-const passworldEl = document.getElementById("dispPassword");
-
-document.querySelector('input[name="number]:checked');
-
-//https://corsproxy.io/ used to bypass cors errors
-
-request = (
-  user_input_text,
-  user_input_number,
-  user_input_upper,
-  user_input_special,
-  user_input_lower
-) => {
-  let url = `https://corsproxy.io/?https://passwordwolf.com/api/?length=${user_input_text.value}&upper=${user_input_upper}&numbers=${user_input_number}&special=${user_input_special}&lower=${user_input_lower}&repeat=1`;
-  fetch(url)
-    .then((response) => response.json())
-    .then((responseJson) => {
-      for (let { password } of responseJson) {
-        const apipass = document.createElement("p");
-        apipass.innerText = password;
-        document.querySelector("#dispPassword").innerHTML = password;
-        console.log(password);
-      }
-    });
-};
 // Code assist from https://sam-ngu.medium.com/click-to-copy-to-clipboard-copy-and-paste-with-javascript-be7857de83ca
 const copyButton = document.getElementById("btn-copy");
 copyButton.addEventListener("click", (event) => {
@@ -53,3 +6,23 @@ copyButton.addEventListener("click", (event) => {
   // loading the content into our clipboard
   navigator.clipboard.writeText(content);
 });
+
+// const sections = document.querySelectorAll("section");
+// const navLi = document.querySelectorAll("nav .container ul li");
+// window.onscroll = () => {
+//   var current = "";
+
+//   sections.forEach((section) => {
+//     const sectionTop = section.offsetTop;
+//     if (pageYOffset >= sectionTop - 60) {
+//       current = section.getAttribute("id");
+//     }
+//   });
+
+//   navLi.forEach((li) => {
+//     li.classList.remove("active");
+//     if (li.classList.contains(current)) {
+//       li.classList.add("active");
+//     }
+//   });
+// };
