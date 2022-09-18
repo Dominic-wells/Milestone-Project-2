@@ -110,7 +110,7 @@ const usedList = [
 ];
 //Chucknorris easter egg
 let chuckMode = new RegExp(/Chucknorris|chucknorris/g);
-//If else,else for password
+//If else,else for password inputs
 function analysePassword(PasswordParameter) {
   if (usedList.includes(PasswordParameter)) {
     strengthBadge.style.background = "orange";
@@ -136,7 +136,7 @@ function analysePassword(PasswordParameter) {
     console.log("Weak");
   }
 }
-
+// Will remove the Badge when not needed
 password.addEventListener("input", () => {
   strengthBadge.style.display = "block";
   clearTimeout(timeout);
