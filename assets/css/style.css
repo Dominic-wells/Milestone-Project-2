@@ -173,16 +173,21 @@ p {
     background: #1D1D1D;
 }
 
-.passwordbox {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* align-items: center; */
+.radioBtn {
     display: grid;
     place-items: center;
 }
 
+.btn-primary {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
 
+.passwordbox {
+    display: grid;
+    place-items: center;
+}
 
 .passwordInput {
     margin-top: 5%;
@@ -198,14 +203,6 @@ p {
 .strengthDisp {
     font-size: larger;
 }
-
-/* .svgImg {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-} */
 
 .laptoplady {
     display: block;
