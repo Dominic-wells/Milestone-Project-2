@@ -108,9 +108,9 @@ Balsamiq wireframe Designs:
 -Fully responsive across a wide range of devices and systems<br>
 -A sidenav with links to sections of the website<br>
 -A password strengh tester<br>
--A password generator<br>
+-A password generator with copy button<br>
 
-## Password Generator
+## Password Strengh Tester
 
 Visitors can enter a password in the password textbox and they will receive a response to the password entered.
 
@@ -126,4 +126,19 @@ The above user entered a password that was found to be weak or unusable.
 
 ![image of password found to be a good outcome](assets/readme-assets/goodpassword.png)
 
-The abouve user entered a password that was found to be good.
+The above user entered a password that was found to be good.
+
+## Password Generator
+
+Visitors can generate a password baised on button and text inputs.
+
+Visitors can select what characters and length they wish their password to be.
+The user inputs will be passed to an external API to [passwordwolf](https://passwordwolf.com/) The password is then displayed for the user. The user can also click a button to have the password copied
+
+This is done by capturing user inputs from radio buttons and the text box, making them into variables to pass on the values to a URL then using the Fetch(Get) to receive the data and then display the password to the visitor
+
+![image of Password Generator with an outputted password](assets/readme-assets/passgen.png)
+
+The above user quested a password that was 6 characters long and used upper,lower and special characters
+
+## Testing
