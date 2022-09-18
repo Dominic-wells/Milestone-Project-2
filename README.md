@@ -99,21 +99,31 @@ Balsamiq wireframe Designs:
 <details><summary>A rough wireframe design in Balsamiq desktop style stage 2</summary><img src="/assets/readme-assets/wireframe/OP Pass Desktop stage3.png"></details>
 <br>
 <details><summary>A rough wireframe design in Balsamiq mobile style stage 1</summary><img src="/assets/readme-assets/wireframe/Op Pass Mobile.png"></details>
-<details><summary>A rough wireframe design in Balsamiq mobile style stage 2</summary><img src="/assets/readme-assets/wireframe/Op Pass mobile stage2.png"></details>
+<details><summary>A rough wireframe design in Balsamiq mobile style stage 2</summary><img src="/assets/readme-assets/wireframe/Op Pass Mobile stage2.png"></details>
 <br>
 <details><summary>A rough wireframe design in Balsamiq tablet style stage 1</summary><img src="/assets/readme-assets/wireframe/OP Pass Tablet.png"></details>
 
 ## Features
 
 -Fully responsive across a wide range of devices and systems<br>
--A Favicon was added to the webpage to allow ease of identifying zombie survival UK when not currently viewing on the visitor's internet browser<br>
--A modal form with a thank you page
+-A sidenav with links to sections of the website<br>
+-A password strengh tester<br>
+-A password generator<br>
 
-### Site-wide
+## Password Generator
 
-**1. Navbar**
+Visitors can enter a password in the password textbox and they will receive a response to the password entered.
 
-- Logo maintains visibility on all device sizes
-- Logo acts as the Home button to avoid duplication and clutter
-- Hoverable links provide responsive visual feedback
-- Active links clearly indicate current location on site
+The response is based on the input entered passing a programming conditional statement using RegEx and commonly used passwords in a list using Javascript.
+
+![image of a password found on list outcome](assets/readme-assets/listpassword.png)
+
+The above user entered a password that was on the common password list.
+
+![image of password found to be weak outcome](assets/readme-assets/weakpassword.png)
+
+The above user entered a password that was found to be weak or unusable.
+
+![image of password found to be a good outcome](assets/readme-assets/goodpassword.png)
+
+The abouve user entered a password that was found to be good.
