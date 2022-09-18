@@ -35,8 +35,8 @@
       <span class="logo-text "><i>"The password Place"</i></span>
     </div>
     <nav class="nav-links">
-      <a class="nav-link" href="#">Analyse</a>
-      <a class="nav-link" href="#">Best Practice</a>
+      <a class="nav-link" href="#Analyse">Analyse</a>
+      <a class="nav-link" href="#Best_Practice">Best Practice</a>
       <a class="nav-link" href="#Generate">Generate</a>
     </nav>
     <div class="media-links">
@@ -120,12 +120,14 @@
     <div id="passworddivbox" class="passwordbox">
       <input type="password" placeholder="Type your password" id="PassDifficulty">
       <br>
-      <span id="strengthDisp" class="badge">Weak</span>
+      <!-- <span id="strengthDisp" class="badge">Weak</span> -->
+      <h1 id="strengthDisp"><span class="badge badge-secondary"></span></h1>
       <br>
     </div>
     </section>
-    <div style=" display: flex; justify-content: center; align-items: center;">
-      <img src="assets/images/laptop.svg" id="laptoplady" alt="illustration image of a women with a laptop">
+    <div class="container">
+      <img src=" assets/images/laptop.webp" width="640" height="400" class="img-fluid center-block laptoplady"
+        alt=" illustration image of a women with a laptop">
     </div>
     <section id="Best_Practice">
       <P>fskfsfskljskdf
@@ -145,7 +147,9 @@
 
 
     <section id="Analyse"></section>
-    <div class=" form-check-inline">
+
+    <!-- <section id="Generate"> -->
+    <div class=" form-check-inline" id="Generate">
       <form>
         <p>Include Numbers:</p>
         <input type="radio" id="yes_number" name="number" value="on" checked="checked">
@@ -189,7 +193,7 @@
       <button id="btn-copy">Copy Password</button>
       <br>
     </div>
-    </section>
+    <!-- </section> -->
 
   </div>
 
