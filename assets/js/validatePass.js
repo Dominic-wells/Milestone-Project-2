@@ -115,22 +115,22 @@ function analysePassword(PasswordParameter) {
   if (usedList.includes(PasswordParameter)) {
     strengthBadge.style.background = "orange";
     strengthBadge.textContent = "One of the most common passwords..";
-    document.getElementById("passworddivbox").style.backgroundColor = "#1D1D1D";
+    document.getElementById("norrisfull").style.backgroundColor = "#1D1D1D";
     console.log("onlist");
   } else if (chuckMode.test(PasswordParameter)) {
     strengthBadge.style.background = "orange";
-    document.getElementById("passworddivbox").style.backgroundColor = "gold";
+    document.getElementById("norrisfull").style.backgroundColor = "gold";
     strengthBadge.textContent =
       "There is no chin behind Chuck Norris' beard. There is only another fist.";
     console.log("The god Chuck");
   } else if (strongPassword.test(PasswordParameter)) {
     strengthBadge.style.backgroundColor = "green";
-    document.getElementById("passworddivbox").style.backgroundColor = "#1D1D1D";
+    document.getElementById("norrisfull").style.backgroundColor = "#1D1D1D";
     strengthBadge.textContent = "Few passwords are safe this could be one ";
     console.log("Strong");
   } else {
     strengthBadge.style.backgroundColor = "red";
-    document.getElementById("passworddivbox").style.backgroundColor = "#1D1D1D";
+    document.getElementById("norrisfull").style.backgroundColor = "#1D1D1D";
     strengthBadge.textContent =
       "Needs improvement, Go and read the password section again...";
     console.log("Weak");
