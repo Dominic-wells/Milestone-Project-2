@@ -37,7 +37,7 @@
     <nav class="nav-links">
       <a class="nav-link" href="#">Analyse</a>
       <a class="nav-link" href="#">Best Practice</a>
-      <a class="nav-link" href="#">Protect</a>
+      <a class="nav-link" href="#Generate">Generate</a>
     </nav>
     <div class="media-links">
       <a href="https://www.youtube.com/" target="_blank" aria-label="link to Youtube"><i
@@ -53,9 +53,9 @@
   <div class="topnav" id="thetopnav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="top-nav-links">
-      <a class="top-nav-link" href="#">Analyse</a>
-      <a class="top-nav-link" href="#">Best Practice</a>
-      <a class="top-nav-link" href="#">Protect</a>
+      <a class="top-nav-link" href="#Analyse">Analyse</a>
+      <a class="top-nav-link" href="#Best_Practice">Best Practice</a>
+      <a class="top-nav-link" href="#Generate">Generate</a>
     </nav>
     <div class="top-media-links">
       <a href="https://www.youtube.com/" target="_blank" aria-label="link to Youtube"><i
@@ -68,22 +68,82 @@
   </div>
 
   <!--code guidance for hamburger from https://www.w3schools.com/howto/howto_js_curtain_menu.asp-->
-  <div class="main">
+  <div id="passworddivbox" class="main">
     <div class="hamburger">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <section id="Analyse">
     </div>
-    <h1>fskfsfskljskdf</h1>
+    <!--Text taken from https://security.tcnj.edu/security-guidelines/passwords/-->
+    <h1>Passwords</h1>
     <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum."
+      Passwords are a critical part of information and network security. Passwords serve to protect against unauthorized
+      access, but a poorly chosen password could put the entire institution at risk.<br>
+    <p>What is a password? A password is your personal key to a computer system. Passwords help to ensure that only
+      authorized individuals access computer systems. Passwords also help to determine accountability for all
+      transactions and other changes made to system resources, including data. If you share your password with a
+      colleague or friend, you may be giving an unauthorized individual access to the system and may be held responsible
+      for their actions. What if the individual gives your password to someone else? What if some of your files are
+      deleted or otherwise rendered unusable? Are you willing to take the blame if an unauthorized individual uses your
+      access to damage or to make unauthorized changes to data or systems?</p>
     </p>
+    <P>Your password should not be the same as your username. Your password should be unique. Do not use the same
+      password across multiple accounts.A good password is relatively easy to remember, but hard for somebody else to
+      guess. There are a
+      variety of techniques you can use to choose secure passwords. Listed below are some examples of creating
+      passwords.</P>
+    <h2>But generally:
+    </h2>
+    <ol>
+      <li>Passwords should be long and unique.</li>
+      <li>Old passwords should not be re-used.</li>
+      <li>All passwords should conform to the guidelines outlined below.</li>
+    </ol>
+    <br>
+    <h2>Password Construction Guidelines</h2>
+    <p>Poor, weak passwords are easily cracked, and put the entire system at risk. Therefore, strong passwords are
+      required. Try to create a password that is also easy to remember.</p>
+    <ul>
+      <li>Passwords should be long. A password should really be a passphrase. Uses spaces between words to make them
+        longer and harder to crack, but easier to remember.</li>
+      <li>Passwords should contain at least 12 characters.</li>
+      <li>Passwords should contain at least 1 uppercase letter.</li>
+      <li>Passwords should contain at least 1 lowercase letter.</li>
+      <li>Passwords should contain at least 1 numerical character.</li>
+      <li>Symbol characters are encouraged (e.g. @#$%^&!.)</li>
+    </ul>
+    <br>
+    <h2>Tools</h2>
+    <P>Use the input box to try out some kicking passwords</P>
 
-    <div class="form-check-inline">
+
+    <!--Password analyze area  -->
+    <div id="passworddivbox" class="passwordbox">
+      <input type="password" placeholder="Type your password" id="PassDifficulty">
+      <br>
+      <span id="strengthDisp" class="badge">Weak</span>
+      <br>
+    </div>
+    </section>
+
+    <section id="Best_Practice">
+      <P>fskfsfskljskdf
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</P>
+      <p>fskfsfskljskdf
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+    </section>
+
+
+
+    <section id="Analyse"></section>
+    <div class=" form-check-inline">
       <form>
         <p>Include Numbers:</p>
         <input type="radio" id="yes_number" name="number" value="on" checked="checked">
@@ -95,25 +155,25 @@
       <form>
         <p>Include Uppercase:</p>
         <input type="radio" id="yes_upper" name="upper" value="on" checked="checked">
-        <label for="yes_Upper">Yes</label>
+        <label for="yes_upper">Yes</label>
         <input type="radio" id="no_upper" name="upper" value="off">
-        <label for="no_Upper">No</label>
+        <label for="no_upper">No</label>
       </form>
       <br>
       <form>
         <p>Include Lowercase:</p>
         <input type="radio" id="yes_lower" name="lower" value="on" checked="checked">
-        <label for="yes_Lower">Yes</label>
+        <label for="yes_lower">Yes</label>
         <input type="radio" id="no_lower" name="lower" value="off">
-        <label for="no_Lower">No</label>
+        <label for="no_lower">No</label>
       </form>
       <br>
       <form>
         <p>Include special characters:</p>
         <input type="radio" id="yes_spec" name="spec" value="on" checked="checked">
-        <label for="yes_Spec">Yes</label>
+        <label for="yes_spec">Yes</label>
         <input type="radio" id="no_spec" name="spec" value="off">
-        <label for="no_Spec">No</label><br>
+        <label for="no_spec">No</label><br>
       </form>
     </div>
     <div class="passwordbox">
@@ -122,15 +182,13 @@
         placeholder="Enter password length" required>
       <button class="generatorPass" id="genratorPass">Generate</button>
       <br>
-      <!-- <button onclick="copypass()">Copy text</button> -->
-      <button id="btn-copy">Copy Password</button>
-
-
-      <br>
-
       <p id="dispPassword"></p>
-      <!-- <div id="dispPassword"></div> -->
+      <br>
+      <button id="btn-copy">Copy Password</button>
+      <br>
     </div>
+    </section>
+
   </div>
 
   <!-- code guidance from https://www.w3schools.com/howto/howto_js_curtain_menu.asp -->
@@ -144,7 +202,8 @@
     }
   </script>
   <script src="assets/js/script.js"></script>
-
+  <script src="assets/js/genPass.js"></script>
+  <script src="assets/js/validatePass.js"></script>
 </body>
 
 </html>
