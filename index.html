@@ -35,9 +35,9 @@
       <span class="logo-text "><i>"The password Place"</i></span>
     </div>
     <nav class="nav-links">
-      <a class="nav-link" href="#Analyse">Analyse</a>
-      <a class="nav-link" href="#Best_Practice">Best Practice</a>
-      <a class="nav-link" href="#Generate">Generate</a>
+      <a class="nav-link" href="#analyse">Analyse</a>
+      <a class="nav-link" href="#best_Practice">Best Practice</a>
+      <a class="nav-link" href="#generate">Generate</a>
     </nav>
     <div class="media-links">
       <a href="https://www.youtube.com/" target="_blank" aria-label="link to Youtube"><i
@@ -53,9 +53,9 @@
   <div class="topnav" id="thetopnav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="top-nav-links">
-      <a class="top-nav-link" href="#Analyse">Analyse</a>
-      <a class="top-nav-link" href="#Best_Practice">Best Practice</a>
-      <a class="top-nav-link" href="#Generate">Generate</a>
+      <a class="top-nav-link" onclick="closeNav()" href="#analyse">Analyse</a>
+      <a class="top-nav-link" onclick="closeNav()" href="#best_Practice">Best Practice</a>
+      <a class="top-nav-link" onclick="closeNav() " href="#generate">Generate</a>
     </nav>
     <div class="top-media-links">
       <a href="https://www.youtube.com/" target="_blank" aria-label="link to Youtube"><i
@@ -71,10 +71,9 @@
   <div id="passworddivbox" class="main">
     <div class="hamburger">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      <section id="Analyse">
     </div>
     <!--Text taken from https://security.tcnj.edu/security-guidelines/passwords/-->
-    <h1>Passwords</h1>
+    <h1 id="analyse">Passwords</h1>
     <p>
       Passwords are a critical part of information and network security. Passwords serve to protect against unauthorized
       access, but a poorly chosen password could put the entire institution at risk.<br>
@@ -129,63 +128,88 @@
       <img src=" assets/images/laptop.webp" width="640" height="400" class="img-fluid center-block laptoplady"
         alt=" illustration image of a women with a laptop">
     </div>
-    <section id="Best_Practice">
-      <P>fskfsfskljskdf
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."</P>
-      <p>fskfsfskljskdf
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."</p>
+
+
+    <!--text from https://passwordwolf.com/-->
+    <section id="best_Practice">
+      <h1>Best Practice</h1>
+      <br>
+      <h2>Protect your password
+      </h2>
+      <ul>
+        <li>Don't tell anyone your password. Not the IT department at work, not your ISP, not your bank, no one. System
+          administrators should never ask for your password. If someone does, consider it suspicious.</li>
+        <li>Don't save your password when a website asks if you wish to save the password. This type of storage is not
+          encrypted. It is rather simple to steal your password when stored in this way.</li>
+        <li>Use a random password generator to create a unique secure pass phrase for each site you login to.
+        </li>
+      </ul>
+      <h2>Ways a password is hacked
+      </h2>
+      <ul>
+        <li>Passwords can be stolen. Either over the network through an insecure channel such as HTTP or from grabbing
+          your saved passwords file or simply by looking over your shoulder as you type. They can also be stolen if
+          hackers steal the password file of a company you have an account with.</li>
+        <li>Dictionary attack. This is an attack where a computer will try every word in the dictionary to see if it's
+          your password. This type of attack often substitutes "O" for "0" or "i" with "1". It also can put one or two
+          digits at the end of every word quite quickly too. Protect against this by never using words in a dictionary
+          or any words similar to dictionary words. By using a strong random generator, you protect yourself from this.
+        </li>
+        <li>Password cracking and brute force techniques. This is where every combination of password is attempted.
+          Starting with "a", "b", "c" then going up to "aaaa", "aaab", "aaac" etc. Eventually every combination of
+          letters, numbers and characters will be tried and the password will be broken. To combat against this, simply
+          choose a longer password. Brute force attacks can take a very long time (years) if the password is just 15
+          characters long.
+        </li>
+      </ul>
+      <h2>Using a random password generator
+      </h2>
+      <P>This strong password generator tool using the <a href="https://passwordwolf.com/" target="_blank">PasswordWolf
+          api</a>
+        passwordwolf.api on this site can be used to create random, secure, and strong passwords.
+        The generator uses javascript which must be enabled in the browser for the tool to work. The generator creates
+        the password on the client side so that none of the passwords are sent over the Internet to be sniffed.</P>
     </section>
 
 
 
-    <section id="Analyse"></section>
+    <!-- <section id="Analyse"></section> -->
 
-    <!-- <section id="Generate"> -->
-    <div class=" form-check-inline" id="Generate">
+
+    <div class="radioBtn">
       <form>
-        <p>Include Numbers:</p>
-        <input type="radio" id="yes_number" name="number" value="on" checked="checked">
-        <label for="yes_number">Yes</label>
-        <input type="radio" id="no_number" name="number" value="off">
-        <label for="no_number">No</label>
+        <input type="radio" class=" btn-check" id="yes_number" name="number" value="on" checked="checked">
+        <label class="btn btn-primary" for="yes_number">Use Numbers</label>
+        <input type="radio" class="btn-check" id="no_number" name="number" value="off">
+        <label class="btn btn-primary" for="no_number">Don't use Numbers</label>
       </form>
       <br>
       <form>
-        <p>Include Uppercase:</p>
-        <input type="radio" id="yes_upper" name="upper" value="on" checked="checked">
-        <label for="yes_upper">Yes</label>
-        <input type="radio" id="no_upper" name="upper" value="off">
-        <label for="no_upper">No</label>
+        <input type="radio" class="btn-check" id="yes_upper" name="upper" value="on" checked="checked">
+        <label class="btn btn-primary" for="yes_upper">Use Uppercase</label>
+        <input type="radio" class="btn-check" id="no_upper" name="upper" value="off">
+        <label class="btn btn-primary" for="no_upper">Don't use Uppercase</label>
       </form>
       <br>
       <form>
-        <p>Include Lowercase:</p>
-        <input type="radio" id="yes_lower" name="lower" value="on" checked="checked">
-        <label for="yes_lower">Yes</label>
-        <input type="radio" id="no_lower" name="lower" value="off">
-        <label for="no_lower">No</label>
+        <input type="radio" class="btn-check" id="yes_lower" name="lower" value="on" checked="checked">
+        <label class="btn btn-primary" for="yes_lower">Use Lowercase</label>
+        <input type="radio" class="btn-check" id="no_lower" name="lower" value="off">
+        <label class="btn btn-primary" for="no_lower">Don't use Lowercase</label>
       </form>
       <br>
       <form>
-        <p>Include special characters:</p>
-        <input type="radio" id="yes_spec" name="spec" value="on" checked="checked">
-        <label for="yes_spec">Yes</label>
-        <input type="radio" id="no_spec" name="spec" value="off">
-        <label for="no_spec">No</label><br>
+        <input type="radio" class="btn-check" id="yes_spec" name="spec" value="on" checked="checked">
+        <label class="btn btn-primary" for="yes_spec">Use special</label>
+        <input type="radio" class="btn-check" id="no_spec" name="spec" value="off">
+        <label class="btn btn-primary" for="no_spec">Don't use special</label><br>
       </form>
+      <br>
     </div>
-    <div class="passwordbox">
+    <div id="generate" class="passwordbox">
       <!-- text input gudice from https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/-->
       <input type="text" inputmode="numeric" pattern="[0-9]*" id="passlen" class="pass-len-box"
-        placeholder="Enter password length" required>
+        placeholder="Enter a number(6-30)" required>
       <button class="generatorPass" id="genratorPass">Generate</button>
       <br>
       <p id="dispPassword"></p>
@@ -193,7 +217,7 @@
       <button id="btn-copy">Copy Password</button>
       <br>
     </div>
-    <!-- </section> -->
+
 
   </div>
 
