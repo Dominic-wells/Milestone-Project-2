@@ -91,7 +91,23 @@ Balsamiq wireframe Designs:
 
 # Wireframes
 
-![Desktop Wireframe](assets\readme-assets\wireframe\OPPass Desktop.png)
+![Desktop Wireframe](https://github.com/Dominic-wells/Milestone-Project-2/blob/main/assets/readme-assets/wireframe/OP%20Pass%20Desktop%20stage3.png)
 ![Mobile Wireframe](https://github.com/Dominic-wells/Milestone-Project-2/blob/main/assets/readme-assets/wireframe/Op%20Pass%20Mobile%20stage3.png)
+![Tablet Wirefame](https://github.com/Dominic-wells/Milestone-Project-2/blob/main/assets/readme-assets/wireframe/OP%20Pass%20Tablet%20stage2.3.png)
 
-<img>assets/readme-assets/mockup.png
+<details><summary>A rough wireframe design in Balsamiq desktop style</summary><img src="assets/readme-assets/wireframe/OP Pass Desktop.png></details>
+
+## Features
+
+-Fully responsive across a wide range of devices and systems<br>
+-A Favicon was added to the webpage to allow ease of identifying zombie survival UK when not currently viewing on the visitor's internet browser<br>
+-A modal form with a thank you page
+
+### Site-wide
+
+**1. Navbar**
+
+- Logo maintains visibility on all device sizes
+- Logo acts as the Home button to avoid duplication and clutter
+- Hoverable links provide responsive visual feedback
+- Active links clearly indicate current location on site
