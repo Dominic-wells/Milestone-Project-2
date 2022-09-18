@@ -28,7 +28,7 @@
 <body>
   <div class="sidenav">
     <div class="logo-image">
-      <a class="navbar-logo" href="/"></a>
+      <a class="navbar-logo"></a>
       <img src="assets/images/green-op-pass.svg" alt="OP-PASS" class="logo" height="70" width="100" />
     </div>
     <div class="logo-text-box">
@@ -116,7 +116,7 @@
 
     <!--Password analyze area  -->
     <div id="passworddivbox" class="passwordbox">
-      <input type="password" placeholder="Type your password" id="PassDifficulty">
+      <input type="password" placeholder="Type your password" aria-label="type password" id="PassDifficulty">
       <br>
       <!-- <span id="strengthDisp" class="badge">Weak</span> -->
       <h1 id="strengthDisp" class="badge badge-secondary">Output here</h1>
@@ -216,7 +216,7 @@
     <div id="generate" class="passwordbox">
       <!-- text input gudice from https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/-->
       <input type="text" inputmode="numeric" pattern="[0-9]*" id="passlen" class="pass-len-box"
-        placeholder="Enter a number(6-30)" required>
+        placeholder="Enter a number(6-30)" aria-label="Enter Number" required>
       <button class="generatorPass" id="genratorPass">Generate</button>
       <br>
       <p id="dispPassword"></p>
