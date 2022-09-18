@@ -96,9 +96,8 @@ Balsamiq wireframe Designs:
 
 <!-- ![Tablet Wirefame](https://github.com/Dominic-wells/Milestone-Project-2/blob/main/assets/readme-assets/wireframe/OP%20Pass%20Tablet%20stage2.3.png) -->
 
-![Tablet Wirefame]("assets/readme-assets/wireframe/OP Pass Tablet stage2.3.png")
-
-<details><summary>A rough wireframe design in Balsamiq desktop style</summary><img src="assets/readme-assets/wireframe/OP Pass Desktop.png"></details>
+![Tablet Wirefame](assets/readme-assets/wireframe/OP Pass Tablet stage2.3.png)
+![Tablet Wireframe](/assets/readme-assets/wireframe/OP%20Pass%20Tablet%20stage2.3.png)
 
 ## Features
 
