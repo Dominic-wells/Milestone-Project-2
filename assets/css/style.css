@@ -5,6 +5,10 @@ body {
     background: #1D1D1D;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Arimo', sans-serif;
 }
@@ -145,6 +149,7 @@ p {
 
 .hamburger {
     position: absolute;
+    /* position: sticky; */
     top: 10px;
     right: 10px;
 }
@@ -175,5 +180,35 @@ p {
     /* align-items: center; */
     display: grid;
     place-items: center;
+}
 
+
+
+.passwordInput {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.displayBadge {
+    margin-top: 5%;
+    display: none;
+    text-align: center;
+}
+
+.strengthDisp {
+    font-size: larger;
+}
+
+/* .svgImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+} */
+
+.laptoplady {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
