@@ -19,6 +19,15 @@ An interactive front-end site that responds to the users' actions, allowing user
    - [Typography](#typography)
    - [Skeleton](#skeleton)
    - [Features](#Features)
+4. [Password Strength Tester](#Password-Strength-Tester)
+5. [Password Generator](#Password-Generator)
+6. [Testing](#testing)
+   - [Manual testing](#Manual-testing)
+   - [User Stories Testing testing](#User-Stories-Testing)
+7. [Bugs and Fixes](#bugs-and-fixes)
+8. [Technology used](#technology-used)
+9. [Deployment](#Deployment)
+10. [Credits](#Credits)
 
 # Introduction
 
@@ -248,15 +257,15 @@ While manual testing I made sure that the:
 - Log in to GitHub and locate the GitHub Repository.
 - Then find the Settings option
 - Click on Pages to open the GitHub Pages Section.
-- On Source I clicked main and root
+- On Source, I clicked main and root
 - Saved and waited for the confirmation
 
 ### fork
 
 I Fork my repository:
 
--Sign in to Github and go to my repository
--Click the Fork buttion
+-Sign in to GitHub and go to my repository
+-Click the Fork button
 
 ### Clone
 
@@ -278,6 +287,6 @@ To clone my project;
 
 ### Acknowledgements
 
-- My Mentor Ronan For pointing me in the right dierection and providing great feedback.
+- My Mentor Ronan For pointing me in the right direction and providing great feedback.
 
 [Back to top](#zombie-survival-uk)
